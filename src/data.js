@@ -1,0 +1,55 @@
+// create sample products
+
+const data = {
+  products: [
+    {
+      name: 'Nike Slim shirts',
+      slug: 'nike-slim-shirt',
+      category: 'Shirts',
+      image: '/images/p1.jpg',
+      price: '120',
+      countInStock: 10,
+      brand: 'Nike',
+      rating: '4.5',
+      numReviews: 10,
+      description: 'high quality shirts',
+    },
+    {
+      name: 'Nike Slim skurt',
+      slug: 'nike-slim-pants',
+      category: 'Shirts',
+      image: '/images/p2.jpg',
+      price: '140',
+      countInStock: 9,
+      brand: 'Puma',
+      rating: '4.5',
+      numReviews: 10,
+      description: 'high quality pants',
+    },
+    {
+      name: 'Nike Slim shirt',
+      slug: 'nike-slim-jacket',
+      category: 'Shirts',
+      image: '/images/p3.jpg',
+      price: '160',
+      countInStock: 10,
+      brand: 'Nike',
+      rating: '5',
+      numReviews: 10,
+      description: 'high quality jackets',
+    },
+    {
+      name: 'Nike Slim jacket',
+      slug: 'nike-slim-pant',
+      category: 'Shirts',
+      image: '/images/p4.jpg',
+      price: '120',
+      countInStock: 10,
+      brand: 'Nike',
+      rating: '4.5',
+      numReviews: 10,
+      description: 'high quality shirts',
+    },
+  ],
+};
+export default data;
