@@ -74,3 +74,8 @@ List Products
 2.add product images
 3.render products
 4.style products
+
+add routing 
+npm i react-router-dom
+create roue from home screen
+create aroute from product screen
