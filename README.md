@@ -102,3 +102,8 @@ npm install axios
 use statte hook 
 use effect hook
 uesereducer hook
+
+Manage state by Reducer Hook
+define reducer
+update fetch data
+get state from usReducer
