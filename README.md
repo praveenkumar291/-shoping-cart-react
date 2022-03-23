@@ -75,7 +75,21 @@ List Products
 3.render products
 4.style products
 
-add routing 
+add routing
 npm i react-router-dom
 create roue from home screen
 create aroute from product screen
+
+create a NODE js server
+run npm init root folder
+update package.json set type :module
+add.js to imports
+npm install express
+create server .js
+add start command as node backend /server.js
+required express
+create route for /return backend is ready
+move products js
+create route for /api products
+return products
+run npm start
