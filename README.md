@@ -93,3 +93,12 @@ move products js
 create route for /api products
 return products
 run npm start
+
+
+Fetch products from backend
+
+set proxy in package .json
+npm install axios 
+use statte hook 
+use effect hook
+uesereducer hook
