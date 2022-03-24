@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-header {
+/* header {
   background-color: #404040;
   padding: 1rem;
 }
@@ -19,9 +19,12 @@ header a {
   font-weight: bold;
   color: #ffff;
   text-decoration: none;
+} */
+.site-container {
+  min-height: 100vh;
 }
 main {
-  padding: 1rem;
+  flex: 1;
 }
 .products {
   display: flex;

@@ -94,12 +94,11 @@ create route for /api products
 return products
 run npm start
 
-
 Fetch products from backend
 
 set proxy in package .json
-npm install axios 
-use statte hook 
+npm install axios
+use statte hook
 use effect hook
 uesereducer hook
 
@@ -107,3 +106,9 @@ Manage state by Reducer Hook
 define reducer
 update fetch data
 get state from usReducer
+
+<!-- add bootstarp ui frame work -->
+
+npm install react-bootstrap bootstrap
+linkcontiner: react-router-bootstrap
+update APP.js
