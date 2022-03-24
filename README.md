@@ -114,8 +114,14 @@ linkcontiner: react-router-bootstrap
 update APP.js
 
 
-Create  product rating component
+<!-- Create  product rating component -->
 
 1.create Rating component
 2.create product component
 3.use rating component in p;roduct component
+
+<!-- create a product details screen -->
+1.fetch product from backend
+2. create 3 colums for image ,info , and action 
+
+<!--  -->
