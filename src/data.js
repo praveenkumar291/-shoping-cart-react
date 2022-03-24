@@ -42,7 +42,7 @@ const data = {
       name: 'Nike Slim jacket',
       slug: 'nike-slim-pant',
       category: 'Shirts',
-      image: '/images/p4.jpg',
+      image: '/images/p5.jpg',
       price: '120',
       countInStock: 10,
       brand: 'Nike',

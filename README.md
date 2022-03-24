@@ -112,3 +112,10 @@ get state from usReducer
 npm install react-bootstrap bootstrap
 linkcontiner: react-router-bootstrap
 update APP.js
+
+
+Create  product rating component
+
+1.create Rating component
+2.create product component
+3.use rating component in p;roduct component
