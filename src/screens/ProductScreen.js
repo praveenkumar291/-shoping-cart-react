@@ -46,17 +46,24 @@ const ProductScreen = () => {
 
         dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
       } catch (err) {
-        dispatch({ type: 'FETCH_FAIL', payload:  getError(err) });
+        dispatch({ type: 'FETCH_FAIL', payload: getError(err) });
       }
     };
     fetchData();
   }, [slug]);
-   const {state,dispatch:ctxDispatch}= useContext(Store);
-  const addToCartHandler = () => {
-   // here i neeed to dispatch action on the react context
-   ctxDispatch({type:'CARD_ADD_ITEM',payload:{...product,quantity:1}})
-
-  }
+  const { state, dispatch: ctxDispatch } = useContext(Store);
+  const { cart } = state;
+  const addToCartHandler = async () => {
+    const existItem = cart.cartItems.find((x) => x._id === product._id);
+    const quantity = existItem ? existItem.quantity + 1 : 1;
+    const { data } = await axios.get(`/api/products/${product._id}`);
+    if (data.countInStock < quantity) {
+      window.alert('Sorry product is out of stock');
+      return;
+    }
+    // here i neeed to dispatch action on the react context
+    ctxDispatch({ type: 'CARD_ADD_ITEM', payload: { ...product, quantity } });
+  };
   return loading ? (
     <div>
       <LoadingBox />
@@ -115,7 +122,9 @@ const ProductScreen = () => {
                 {product.countInStock > 0 && (
                   <ListGroup.Item>
                     <div className="d-grid">
-                      <Button onClick={addToCartHandler} variant="primary">ADD to cart</Button>
+                      <Button onClick={addToCartHandler} variant="primary">
+                        ADD to cart
+                      </Button>
                     </div>
                   </ListGroup.Item>
                 )}

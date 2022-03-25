@@ -138,3 +138,8 @@ create React Context
 define reducer
 create store provider
 implement add to card burtton click handler
+ <!-- complete add to cart  -->
+ check exist item in the cart 
+ check count in stock in backend.
+
+ 
