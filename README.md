@@ -130,3 +130,11 @@ update APP.js
 2.use spinner component
 3.create message component
 4.create utils.js to define getError function
+
+<!-- Implement add to cart -->
+
+create React Context
+
+define reducer
+create store provider
+implement add to card burtton click handler

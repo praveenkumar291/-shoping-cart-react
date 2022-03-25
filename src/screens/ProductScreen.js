@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useReducer } from 'react';
+import React, { useContext, useEffect, useReducer } from 'react';
 import { useParams } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -12,6 +12,7 @@ import { Helmet } from 'react-helmet-async';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import { getError } from '../utils';
+import { Store } from '../Store';
 
 // import ListGroup.item from "react-bootstrap/ListGroup.item"
 
@@ -50,6 +51,12 @@ const ProductScreen = () => {
     };
     fetchData();
   }, [slug]);
+   const {state,dispatch:ctxDispatch}= useContext(Store);
+  const addToCartHandler = () => {
+   // here i neeed to dispatch action on the react context
+   ctxDispatch({type:'CARD_ADD_ITEM',payload:{...product,quantity:1}})
+
+  }
   return loading ? (
     <div>
       <LoadingBox />
@@ -108,7 +115,7 @@ const ProductScreen = () => {
                 {product.countInStock > 0 && (
                   <ListGroup.Item>
                     <div className="d-grid">
-                      <Button variant="primary">ADD to cart</Button>
+                      <Button onClick={addToCartHandler} variant="primary">ADD to cart</Button>
                     </div>
                   </ListGroup.Item>
                 )}
