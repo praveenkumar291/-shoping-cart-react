@@ -113,7 +113,6 @@ npm install react-bootstrap bootstrap
 linkcontiner: react-router-bootstrap
 update APP.js
 
-
 <!-- Create  product rating component -->
 
 1.create Rating component
@@ -121,7 +120,13 @@ update APP.js
 3.use rating component in p;roduct component
 
 <!-- create a product details screen -->
-1.fetch product from backend
-2. create 3 colums for image ,info , and action 
 
-<!--  -->
+1.fetch product from backend 2. create 3 colums for image ,info , and action
+3.using helment async
+
+<!-- create loding and message component -->
+
+1.create loading component
+2.use spinner component
+3.create message component
+4.create utils.js to define getError function
