@@ -146,5 +146,9 @@ implement add to card burtton click handler
  1.create 2 colums
  2.display items list
  3.create actions 
-
- 
+<!-- coplete cart screen -->
+click handler for inc/dec items
+click handler for remove item
+click handler fro checkout
+cart items saved in local storage
+Add to crt handler 
