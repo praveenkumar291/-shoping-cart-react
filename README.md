@@ -142,4 +142,9 @@ implement add to card burtton click handler
  check exist item in the cart 
  check count in stock in backend.
 
+ <!-- Create cart screen  -->
+ 1.create 2 colums
+ 2.display items list
+ 3.create actions 
+
  

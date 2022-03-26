@@ -46,9 +46,12 @@ main {
   color: #ffc000;
 }
 .btn-primary {
-  background-color: #ffc000;
+  background-color: #ffc000 !important;
   color: #000000;
 }
 .img-large{
   max-width: 100%;
+}
+.img-thumbnail{
+  height: 40px !important;
 }
