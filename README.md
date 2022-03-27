@@ -152,3 +152,7 @@ click handler for remove item
 click handler fro checkout
 cart items saved in local storage
 Add to crt handler 
+<!-- Create Sign screen -->
+1.create sign in from
+2.add email and password
+3.add signin button
