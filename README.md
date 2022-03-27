@@ -138,21 +138,28 @@ create React Context
 define reducer
 create store provider
 implement add to card burtton click handler
+
  <!-- complete add to cart  -->
- check exist item in the cart 
- check count in stock in backend.
+
+check exist item in the cart
+check count in stock in backend.
 
  <!-- Create cart screen  -->
- 1.create 2 colums
- 2.display items list
- 3.create actions 
+
+1.create 2 colums
+2.display items list
+3.create actions
+
 <!-- coplete cart screen -->
+
 click handler for inc/dec items
 click handler for remove item
 click handler fro checkout
 cart items saved in local storage
-Add to crt handler 
+Add to crt handler
+
 <!-- Create Sign screen -->
+
 1.create sign in from
 2.add email and password
 3.add signin button
@@ -162,4 +169,12 @@ Add to crt handler
 1.create atlas monogodb data base
 2.install local mongodb data base
 3.npm install mongoose
-4.connect to mongodb  data base
+4.connect to mongodb data base
+
+<!-- Create sample data -->
+
+1.creaate product model
+2.create a user model
+3.create seed route
+4.use route in server.js
+5.seed smaple prosuct
