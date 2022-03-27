@@ -49,9 +49,12 @@ main {
   background-color: #ffc000 !important;
   color: #000000;
 }
-.img-large{
+.img-large {
   max-width: 100%;
 }
-.img-thumbnail{
+.img-thumbnail {
   height: 40px !important;
+}
+.small-container {
+  max-width: 600px !important;
 }
