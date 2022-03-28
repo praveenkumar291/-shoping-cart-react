@@ -14,37 +14,38 @@ const SigninScreen = () => {
   const navigate = useNavigate();
   const { search } = useLocation();
   const redirectInUrl = new URLSearchParams(search).get('redirect');
-  const redirect = redirectInUrl ? redirectInUrl : '/';
+  const redirect = redirectInUrl ? redirectInUrl : '/shipping';
 
-  const [email, setEmail] = useState('');   // use state hook emil
+  const [email, setEmail] = useState(''); // use state hook emil
   const [password, setPassword] = useState(''); // use state hook password
-  const { state, dispatch: ctxDispatch } = useContext(Store);  // here use ing use context and store
-  const { userInfo } = state; 
+  const { state, dispatch: ctxDispatch } = useContext(Store); // here use ing use context and store
+  const { userInfo } = state;
 
-  // onsubmit 
+  // onsubmit
   const submitHandler = async (e) => {
     e.preventDefault();
 
     try {
-      const { data } = await axios.post('/api/users/signin', {  //ajax request
+      const { data } = await axios.post('/api/users/signin', {
+        //ajax request
         email,
         password,
       });
-      ctxDispatch({ type: 'USER_SIGNIN', payload: data }); //  dispatch acton 
-      localStorage.setItem('userInfo', JSON.stringify(data));  // data store in local storage
-      navigate(redirect || '/');
+      ctxDispatch({ type: 'USER_SIGNIN', payload: data }); //  dispatch acton
+      localStorage.setItem('userInfo', JSON.stringify(data)); // data store in local storage
+      navigate( redirect || '/');
     } catch (err) {
-      toast.error(getError(err)); // toastfie using 
+      toast.error(getError(err)); // toastfie using
     }
   };
-  // 
+  //
   useEffect(() => {
     if (userInfo) {
       navigate(redirect);
     }
   }, [navigate, redirect, userInfo]);
   return (
-    <Container className="small-container">
+    <Container className="small-container  continer-bg">
       <Helmet>
         <title>Sign In</title>
       </Helmet>
@@ -53,7 +54,7 @@ const SigninScreen = () => {
 
       <h1 className="my-3">Sign In</h1>
       {/* // onSubmit implement */}
-      <Form onSubmit={submitHandler}> 
+      <Form onSubmit={submitHandler}>
         <Form.Group className="mb-3" controlId="email">
           <Form.Label>Email</Form.Label>
           <Form.Control

@@ -58,3 +58,6 @@ main {
 .small-container {
   max-width: 600px !important;
 }
+.continer-bg{
+  background-color:aquamarine;
+}

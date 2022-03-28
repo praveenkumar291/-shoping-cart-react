@@ -194,3 +194,7 @@ create user routes
 1.handle submit action
 2.save token in store in local storage
 3.shoe user name in header
+<!-- create shipping screen -->
+1.create form inputs
+2.handle save shipping address 
+3.add checkout wizard bar

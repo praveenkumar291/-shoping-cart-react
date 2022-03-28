@@ -15,7 +15,8 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { Store } from './Store';
 import CartScreen from './screens/CartScreen';
 import SigninScreen from './screens/SigninScreen';
-import ShippingScreen from './screens/ShippingScreen';
+// import ShippingScreen from './screens/ShippingAddress';
+import ShippingAddress from './screens/ShippingAddress';
 
 const App = () => {
   const { state,dispatch:ctxDispatch } = useContext(Store); // usecontext
@@ -24,6 +25,7 @@ const App = () => {
   const signoutHandler = () =>{     // signout handler 
     ctxDispatch({type:'USER_SIGNOUT'});
     localStorage.removeItem('userInfo');
+    localStorage.removeItem('shippingAddress');
   }
 
 
@@ -77,7 +79,7 @@ const App = () => {
               <Route path="/" element={<HomeScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/signin" element={<SigninScreen />} />
-              <Route path="/shipping" element={<ShippingScreen />} />
+              <Route path="/shipping" element={<ShippingAddress />} />
 
 
 
