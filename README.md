@@ -178,3 +178,14 @@ Add to crt handler
 3.create seed route
 4.use route in server.js
 5.seed smaple prosuct
+
+<!-- seed sample users -->
+
+create user model 
+seed smaple users 
+create user routes
+<!-- create signin backend api -->
+1.create signin api 
+npm 
+2.npm install jsonwebtoken
+3.define generation
