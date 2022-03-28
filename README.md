@@ -184,8 +184,13 @@ Add to crt handler
 create user model 
 seed smaple users 
 create user routes
-<!-- create signin backend api -->
-1.create signin api 
-npm 
+<!-- create sign in backend api -->
+1.create sign in api 
+
 2.npm install jsonwebtoken
 3.define generation
+<!-- complete sign in a screen  -->
+
+1.handle submit action
+2.save token in store in local storage
+3.shoe user name in header
