@@ -19,6 +19,7 @@ import SigninScreen from './screens/SigninScreen';
 import ShippingAddress from './screens/ShippingAddress';
 import SignupScreen from './screens/SignupScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen';
+import PlaceOrderScreen from './screens/PlaceOrderScreen';
 
 
 //////////
@@ -91,6 +92,8 @@ const App = () => {
               <Route path="/shipping" element={<ShippingAddress />} />
               <Route path="/signup" element={<SignupScreen />} />
               <Route path="/payment" element={<PaymentMethodScreen />} />
+              <Route path="/placeorder" element={<PlaceOrderScreen />} />
+
 
 
 
