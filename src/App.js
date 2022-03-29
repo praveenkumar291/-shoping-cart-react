@@ -18,15 +18,23 @@ import SigninScreen from './screens/SigninScreen';
 // import ShippingScreen from './screens/ShippingAddress';
 import ShippingAddress from './screens/ShippingAddress';
 import SignupScreen from './screens/SignupScreen';
+import PaymentMethodScreen from './screens/PaymentMethodScreen';
+
+
+//////////
 
 const App = () => {
   const { state,dispatch:ctxDispatch } = useContext(Store); // usecontext
   const { cart,userInfo } = state; 
+//////////////////////////////////////////////////////////
+
+
 
   const signoutHandler = () =>{     // signout handler 
     ctxDispatch({type:'USER_SIGNOUT'});
     localStorage.removeItem('userInfo');
     localStorage.removeItem('shippingAddress');
+    localStorage.removeItem('paymentMethod');
   }
 
 
@@ -82,6 +90,8 @@ const App = () => {
               <Route path="/signin" element={<SigninScreen />} />
               <Route path="/shipping" element={<ShippingAddress />} />
               <Route path="/signup" element={<SignupScreen />} />
+              <Route path="/payment" element={<PaymentMethodScreen />} />
+
 
 
 
